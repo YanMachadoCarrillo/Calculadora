@@ -5,7 +5,7 @@ function sumarQ() {
 let num1 = document.getElementById("n1").value
 let num2 = document.getElementById("n2").value
 
-fetch(`http://localhost:3000/suma?num1=${num1}&num2=${num2}`)
+fetch(`https://calculadora-production-5ea8.up.railway.app/suma?num1=${num1}&num2=${num2}`)
 .then(response => response.json())
 .then(data => {
 
