@@ -27,7 +27,7 @@ function sumarB() {
 let num1 = document.getElementById("n1").value
 let num2 = document.getElementById("n2").value
 
-fetch("http://localhost:3001/suma",{
+fetch("https://calculadora-3-bp43.onrender.com/suma",{
 
 method:"POST",
 
