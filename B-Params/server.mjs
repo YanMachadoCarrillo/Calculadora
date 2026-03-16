@@ -5,9 +5,9 @@ import { createServer } from "node:http";
 const server = createServer((req, res) => {
 
   // CORS
-const headers = {
-    'Access-Control-Allow-Origin': '*',
-    'Content-Type': 'application/json'
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
   if (req.method === "OPTIONS") {
     res.writeHead(200);
