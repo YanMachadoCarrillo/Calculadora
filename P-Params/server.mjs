@@ -25,6 +25,6 @@ resultado: resultado
 
 });
 
-server.listen(3002,()=>{
+server.listen(process.env.PORT || 3002,()=>{
 console.log("Servidor PATH PARAMS en puerto 3002");
 });
