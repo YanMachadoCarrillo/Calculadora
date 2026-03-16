@@ -58,7 +58,7 @@ function sumarP(){
 let num1 = document.getElementById("n1").value
 let num2 = document.getElementById("n2").value
 
-fetch(`https://calculadora-1-wnkb.onrender.com//suma/${num1}/${num2}`)
+fetch(`https://calculadora-1-wnkb.onrender.com/suma/${num1}/${num2}`)
 .then(res => res.json())
 .then(data => {
 
